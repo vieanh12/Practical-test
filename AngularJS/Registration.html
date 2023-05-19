@@ -13,28 +13,28 @@
 		<p><b>Registation Site</b></p>
 	  </div>
 		<div > 
-		    <form role = "form" class="well" ng-hide="ifShowUser"name="registrationForm">
+		    <form role = "form" class="well" ng-hide="ifShowUser"name="registrationForm" >
 			    <div class = "form-group">
                     <label for = "name"> Name:  </label>
-                    <input type = "text" name = "name" class = "form-control" placeholder = "Enter Name " ng-model = "name"required>
+                    <input type="text" name="email" class="form-control" placeholder="Enter Name" ng-model="name"required>
                 </div>
                 <div class = "form-group">
                     <label for = "email"> Email:  </label>
                     <input type = "email" name = "email" class = "form-control" placeholder = "Enter Email " ng-model = "email" required>
                 </div>
-			<div class = "form-group">
-				<label for = "password"> Password:  </label>
-				<input type = "password" name = "password" class = "form-control" placeholder = "Enter Password " ng-model = "password" required>
-			</div>
-			<div class = "form-group">
-				<label for = "password"> Repeat password:  </label>
-				<input type = "password" name = "repeatPassword" class = "form-control" placeholder = "Repeat Password " ng-model = "repeatPassword" ng-changed="checkPassword()"required>
-            </div>
-            <span ng-show="passwordMustBeEqual" style="color: red;">Password must be equal</span>
-			<br>
-            <button ng-click="submitForm()">Register</button>
-            <button ng-click="redirectToLogin()">Cancel</button>
-		    </div>
+				<div class = "form-group">
+					<label for = "password"> Password:  </label>
+					<input type = "password" name = "password" class = "form-control" placeholder = "Enter Password " ng-model = "password" required>
+				</div>
+				<div class = "form-group">
+					<label for = "password"> Repeat password:  </label>
+					<input type = "password" name = "repeatPassword" class = "form-control" placeholder = "Repeat Password " ng-model = "repeatPassword" ng-changed="checkPassword()"required>
+				</div>
+				<span ng-show="passwordMustBeEqual" style="color: red;">Password must be equal</span>
+				<br>
+				<button ng-click="submitForm()">Register</button>
+				<button ng-click="redirectToLogin()">Cancel</button>
+				</div>
             </form>
 		  </div>
 		</div>
